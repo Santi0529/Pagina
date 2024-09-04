@@ -106,12 +106,24 @@ nav {
 }
 
 /* Estilos del pie de página */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0; /* Or your preferred color */
+    padding: 1rem;
+  }
+
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+    
 }
 
 .footer-links {
@@ -129,3 +141,5 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+
+
