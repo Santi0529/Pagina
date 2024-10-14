@@ -5,17 +5,11 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%; /* Asegúrate de que el body ocupe todo el alto de la ventana */
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #faeee0; /* Color de fondo */
-    display: flex;
-    flex-direction: column; /* Flexbox para organizar el contenido */
+    background-color: #faeee0; /* Cambia el color de fondo aquí */
 }
 
 /* Estilos de la barra de navegación */
@@ -48,19 +42,14 @@ nav {
     text-decoration: none;
 }
 
-
-
-
-/* Sección de inicio de sesión */
+/* Estilos de la sección de inicio de sesión */
 .login-container {
     max-width: 400px;
-    margin: auto; /* Centra horizontalmente */
+    margin: 50px auto;
     padding: 20px;
     background-color: #fff; /* Fondo blanco para el contenedor del formulario */
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column; /* Para alinear los elementos en columna */
 }
 
 .input-group {
@@ -80,8 +69,7 @@ nav {
 }
 
 /* Estilos para el botón */
-input[type="submit"],
-button {
+input[type="submit"], button {
     background-color: #333;
     color: #fff;
     border: none;
@@ -90,8 +78,7 @@ button {
     border-radius: 5px;
 }
 
-input[type="submit"]:hover,
-button:hover {
+input[type="submit"]:hover, button:hover {
     background-color: #555;
 }
 
@@ -101,7 +88,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: auto; /* Asegura que el footer se mantenga en el fondo */
 }
 
 .footer-links {
@@ -119,4 +105,3 @@ footer {
     color: #fff;
     text-decoration: none;
 }
-

@@ -5,15 +5,14 @@
     box-sizing: border-box;
 }
 
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #faeee0; /* Color de fondo modificado */
+    background-color: #faeee0; /* Cambia el color de fondo aquí */
 }
 
-/* Barra de navegación */
+/* Estilos de la barra de navegación */
 header {
     background-color: #333;
     color: #fff;
@@ -48,48 +47,64 @@ nav {
     text-decoration: none;
 }
 
-/* Contenedor de imagen y texto */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 90px;
-}
-
-.image-container {
-    width: 50%; /* Imagen ocupa el 50% */
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-}
-
-.text-container {
-    width: 50%; /* Texto ocupa el 50% */
-    padding: 20px;
+/* Estilos de la sección de productos */
+.products {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
     text-align: center;
 }
 
-.text-container h1 {
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: calc(33.333% - 40px);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.text-container p {
-    margin-bottom: 20px;
+.product-item h3 {
+    margin-bottom: 10px;
 }
 
-/* Pie de página */
+.product-item p {
+    font-size: 18px;
+    color: #888;
+}
+
+.product-item button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-item button:hover {
+    background-color: #555;
+}
+
+/* Estilos del pie de página */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: fixed; /* Hace que el footer esté siempre visible */
-    bottom: 0; /* Lo ancla a la parte inferior */
-    left: 0;
-    width: 100%; /* Asegura que ocupe toda la anchura de la pantalla */
-    z-index: 1000; /* Asegura que esté encima de otros elementos si es necesario */
 }
 
 .footer-links {
@@ -107,5 +122,3 @@ footer {
     color: #fff;
     text-decoration: none;
 }
-
-
